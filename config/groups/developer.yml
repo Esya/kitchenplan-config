@@ -6,7 +6,6 @@ recipes:
         - dotfiles::workspace
         - applications::mysql
         - applications::php56
-        - applications::skylab
     mac_os_x:
         - applications::sublime_text_3
         - applications::gnu-tar
@@ -47,12 +46,9 @@ attributes:
             - siege
             - watch
             - rsync
-            - composer
         cask_apps:
             - imageoptim
             - imagealpha
-            - phpstorm
-            - sequel-pro
             - sourcetree
     nodejs:
         apps:

@@ -25,12 +25,16 @@ recipes:
         - osxdefaults::mail_copy_email_addresses_instead_of_names_in_mail
         - osxdefaults::set_computer_name
 attributes:
+    gems:
+        - librarian-puppet
+        - puppet
+        - hiera
+        - facter
+        - hiera-eyaml
     dotfiles:
         vimusers:
             - root
-            - roderik
-        kdeploy:
-            hostname: dev
+            - esya
         vim:
             bundle:
                 - sleuth: git://github.com/tpope/vim-sleuth.git
@@ -41,28 +45,28 @@ attributes:
                 - nerdtree: https://github.com/scrooloose/nerdtree.git
                 - vim-css-color: https://github.com/ap/vim-css-color
     git:
-        name: Roderik van der Veer
-        email: roderik.van.der.veer@kunstmaan.be
+        name: Tristan Foureur
+        email: tristan.foureur@gmail.com
     osxdefaults:
-        computername: Mir
+        computername: macbook-esya
     authorization:
         sudo:
             users:
-                - roderik
+                - esya
             passwordless: true
             include_sudoers_d: true
     homebrewalt:
         cask_apps:
-            - onepassword
-            - dropbox
-            - evernote
+            - owncloud
+            - google-drive
             - istat-menus
             - kaleidoscope
             - alfred
-            - totalfinder
             - spotify
             - bartender
             - vmware-fusion
             - vagrant
+            - iterm2
             - hazel
-            - sonos
+            - viscosity
+            - hearthstone-eu
